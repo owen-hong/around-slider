@@ -1,0 +1,52 @@
+/*
+ *  simple gallery with jQuery
+ *	made by owenhong 2013-08-08
+ *	作者：小欧(laohonghzy@qq.com) 2013-08-08
+ *  http://www.520ued.com
+ */
+@charset "utf-8";
+#slider {
+	width:960px;
+	height:400px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+#slider #scroll_wrapper{position:relative;}
+#slider .child {
+	left:960px;
+	position:absolute;
+	z-index:10;
+}
+#slider-img{
+	width:960px;
+	height:30px;
+	text-align:center;
+	margin:0 auto;
+	background:#000;filter:alpha(opacity=60);-moz-opacity:0.6; -khtml-opacity: 0.6; opacity: 0.6;
+	position:absolute;
+	z-index:99;
+	bottom:0;
+}
+#slider-img a{
+	height:11px;
+	width:11px;
+	display:inline-block;
+	background:url(../images/triggers.png) no-repeat;
+	margin-left:15px;
+	margin-top: 10px;
+}
+#slider-img a.cur{
+	background:url(../images/triggers_cur.png) no-repeat;
+}
+
+#btn_prev,#btn_next{
+	width:50px;
+	height:45px;
+	z-index: 99;
+	position:absolute;
+	top: 43%;
+	cursor:pointer;
+	background:url(../images/prev.png);
+}
+#btn_next{right:0;background:url(../images/next.png);}
